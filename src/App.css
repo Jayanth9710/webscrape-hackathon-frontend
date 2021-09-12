@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#card-img-top {
+  width: 150px;
+  height: 215px;
+  
+}
+
+#product-container {
+  padding: 0;
+  border: solid 3px white;
+  background-color: #c3d1d4;
+  font-family: 'Poppins', sans-serif;
+  word-spacing: 2px;
+  gap: 15px;
+  display: flex;
+  margin-bottom: 8px;
+ 
+}
+
+#amazon {
+  color: indigo;
+  font-family: 'Poppins', sans-serif;
+}
+
+#nav {
+  width: 100%;
+  justify-content: center;
+}
+
+.amznlogo{
+  width: 100px;
+  height: 50px;
+}
+
+.fliplogo{
+  width:100px;
+  height: 80px;
 }

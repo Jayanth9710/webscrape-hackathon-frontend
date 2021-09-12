@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Amazon from "./Amazon";
+import Flipkart from "./Flipkart";
+import Topbar from "./Topbar";
+import front from "./FronPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div id="wrapper">
+        <div id="content-wrapper" className="d-flex flex-column">
+          <div id="content">
+            <Topbar/>
+            <Switch>
+              <Route path="/" component={front} exact={true} />
+              <Route path="/amzn" component={Amazon} exact={true} />
+              <Route path="/flip" component={Flipkart} exact={true} />
+            </Switch>
+          </div>
+        </div>
+      </div>
+    </Router>
   );
 }
 
