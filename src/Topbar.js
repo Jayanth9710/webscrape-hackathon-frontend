@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as  Link } from "react-router-dom";
+// import { BrowserRouter as  Link } from "react-router-dom";
+import {Link} from "react-router-dom"
 import "./App.css";
 
 function Topbar() {
@@ -9,14 +10,14 @@ function Topbar() {
         <Link to="/amzn">
           <a className="nav-link collapsed">
             <i className="fas fa-fw fa-cog"></i>
-            {/* <span>Amazon</span> */}
+            <span>Amazon</span>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" className="amznlogo"/>
           </a>
         </Link>
         <Link to="/flip">
           <a className="nav-link collapsed">
             <i className="fas fa-fw fa-cog"></i>
-            {/* <span>Flipkart</span> */}
+            <span>Flipkart</span>
             <img src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-logo-transparent-vector-3.png" className="fliplogo"/>
           </a>
         </Link>
